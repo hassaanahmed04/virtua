@@ -5,479 +5,316 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
-    <title>Virtual learning Enviroment </title>
+    <title>courses</title>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- swiper css link  -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="icon" href="images/tab_icon.png">
+
 </head>
 
 <body>
-    <nav>
-        <img src="images/V-L-E (2).png" alt="V-L-E">
-        <div class="header">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a class="active" href="courses.html">Courses</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="contact.html">Contact Us</a></li>
-                <li>
-                    <div id="login" class="fas fa-user-circle"></div>
-                </li>
 
-            </ul>
+    <!-- header section starts  -->
+
+    <header class="header">
+
+        <a href="home.html" class="logo"> <i class="fas fa-graduation-cap"></i> V-L-E </a>
+
+        <nav class="navbar">
+            <div id="close-navbar" class="fas fa-times"></div>
+            <a href="home.html">home</a>
+            <a href="courses.html">courses</a>
+            <a href="about.html">about</a>
+            <a href="contact.html">contact</a>
+        </nav>
+
+        <div class="icons">
+            <div id="account-btn" class="fas fa-user"></div>
+            <div id="menu-btn" class="fas fa-bars"></div>
         </div>
-    </nav>
 
-    <!-- login form  -->
+    </header>
 
-    <div class="login-form">
+    <!-- account form section starts  -->
 
-        <form action="">
-            <h3>Login</h3>
-            <input type="email" placeholder="username" class="box">
-            <input type="password" placeholder="password" class="box">
-            <p>forget password? <a href="#">click here</a></p>
-            <p>don't have an account? <a href="#">register now</a></p>
-            <input type="submit" class="btn" value="login">
-            <i class="fas fa-times"></i>
+    <div class="account-form">
+
+        <div id="close-form" class="fas fa-times"></div>
+
+        <div class="buttons">
+            <span class="btn active login-btn">login</span>
+            <span class="btn register-btn">register</span>
+        </div>
+
+        <form class="login-form active" action="">
+            <h3>login now</h3>
+            <input type="email" placeholder="enter your email" class="box">
+            <input type="password" placeholder="enter your password" class="box">
+            <div class="flex">
+                <input type="checkbox" name="" id="remember-me">
+                <label for="remember-me">remember me</label>
+                <a href="#">forgot password?</a>
+            </div>
+            <input type="submit" value="login now" class="btn">
+        </form>
+
+        <form class="register-form" action="">
+            <h3>register now</h3>
+            <input type="email" placeholder="enter your email" class="box">
+            <input type="password" placeholder="enter your password" class="box">
+            <input type="password" placeholder="confirm your password" class="box">
+            <input type="submit" value="register now" class="btn">
         </form>
 
     </div>
 
-    <!-- home -->
-    <section id="home">
-        <h2>Courses</h2>
-        <p>Get your desired course here !!</p>
+    <!-- account form section ends -->
 
+    <!-- header section ends -->
+
+    <section class="heading-link">
+        <h3>our courses</h3>
+        <p> <a href="home.html">home</a> / courses </p>
     </section>
-    <!-- features -->
-    <section id="premium">
-        <h1>Premium learning experience</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
-        <div class="base">
+
+    <section class="courses">
+
+        <h1 class="heading"> our famous courses </h1>
+
+        <div class="box-container">
+
             <div class="box">
-                <i class="fas fa-award"></i>
-                <h3>Experience</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, a! Esse ullam, </p>
+                <div class="image">
+                    <img src="images/course-2-1.jpg" alt="">
+                    <h3>development</h3>
+                </div>
+                <div class="content">
+                    <h3>choose what's best for you!</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque, odit!</p>
+                    <a href="#" class="btn">read more</a>
+                    <div class="icons">
+                        <span> <i class="fas fa-book"></i> 15 modules </span>
+                        <span> <i class="fas fa-clock"></i> 4.6 hours </span>
+                    </div>
+                </div>
             </div>
+
             <div class="box">
-                <i class="fas fa-award"></i>
-                <h3>Experience</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, a! Esse ullam, </p>
+                <div class="image">
+                    <img src="images/course-2-2.jpg" alt="">
+                    <h3>engineering</h3>
+                </div>
+                <div class="content">
+                    <h3>choose what's best for you!</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque, odit!</p>
+                    <a href="#" class="btn">read more</a>
+                    <div class="icons">
+                        <span> <i class="fas fa-book"></i> 11 modules </span>
+                        <span> <i class="fas fa-clock"></i> 3 hours </span>
+                    </div>
+                </div>
             </div>
+
             <div class="box">
-                <i class="fas fa-award"></i>
-                <h3>Experience</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, a! Esse ullam, </p>
-            </div>
-        </div>
-    </section>
-    <!-- Courses -->
-
-    <section id="courses">
-        <h1>Our Courses</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, a! Esse ullam, </p>
-        <div class="course-box">
-            <div class="course">
-                <img src="images/flutter.jpg" alt="">
-                <div class="details">
-                    <span>22/03/2022</span>
-                    <h6>Course for beginners</h6>
-                    <div class="review">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <span>(4)</span>
-
+                <div class="image">
+                    <img src="images/course-2-3.jpg" alt="">
+                    <h3>mathemetics</h3>
+                </div>
+                <div class="content">
+                    <h3>choose what's best for you!</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque, odit!</p>
+                    <a href="#" class="btn">read more</a>
+                    <div class="icons">
+                        <span> <i class="fas fa-book"></i> 12 modules </span>
+                        <span> <i class="fas fa-clock"></i> 6.5 hours </span>
                     </div>
                 </div>
-                <!-- <div class="but">
-                    <a class="Enroll-now" href="">Enroll-now</a>
-
-                </div> -->
-                <div class="price">
-                    $10.99
-                </div>
-                <div class="but">
-                    <a class="purple" href="">Learn More</a>
-
-                </div>
             </div>
 
-            <div class="course">
-                <img src="images/java.png" alt="">
-                <div class="details">
-                    <span>22/03/2022</span>
-                    <h6>Course for beginners</h6>
-                    <div class="review">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <span>(4)</span>
-
+            <div class="box">
+                <div class="image">
+                    <img src="images/course-2-4.jpg" alt="">
+                    <h3>Medical</h3>
+                </div>
+                <div class="content">
+                    <h3>choose what's best for you!</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque, odit!</p>
+                    <a href="#" class="btn">read more</a>
+                    <div class="icons">
+                        <span> <i class="fas fa-book"></i> 13 modules </span>
+                        <span> <i class="fas fa-clock"></i> 6 hours </span>
                     </div>
                 </div>
-                <div class="price">
-                    $10.99
-                </div>
-                <div class="but">
-                    <a class="purple" href="">Learn More</a>
-
-                </div>
-
-
             </div>
 
-            <div class="course">
-                <img src="images/wordpress.jpg" alt="">
-                <div class="details">
-                    <span>22/03/2022</span>
-                    <h6>Course for beginners</h6>
-                    <div class="review">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <span>(4)</span>
-
+            <div class="box">
+                <div class="image">
+                    <img src="images/course-2-5.jpg" alt="">
+                    <h3>science</h3>
+                </div>
+                <div class="content">
+                    <h3>choose what's best for you!</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque, odit!</p>
+                    <a href="#" class="btn">read more</a>
+                    <div class="icons">
+                        <span> <i class="fas fa-book"></i> 10 modules </span>
+                        <span> <i class="fas fa-clock"></i> 7 hours </span>
                     </div>
                 </div>
-                <div class="price">
-                    $10.99
-                </div>
-                <div class="but">
-                    <a class="purple" href="">Learn More</a>
-
-                </div>
-
-
             </div>
-            <div class="course">
-                <img src="images/flutter.jpg" alt="">
-                <div class="details">
-                    <span>22/03/2022</span>
-                    <h6>Course for beginners</h6>
-                    <div class="review">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <span>(4)</span>
 
+            <div class="box">
+                <div class="image">
+                    <img src="images/course-2-6.jpg" alt="">
+                    <h3>business</h3>
+                </div>
+                <div class="content">
+                    <h3>choose what's best for you!</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque, odit!</p>
+                    <a href="#" class="btn">read more</a>
+                    <div class="icons">
+                        <span> <i class="fas fa-book"></i> 12 modules </span>
+                        <span> <i class="fas fa-clock"></i> 4 hours </span>
                     </div>
                 </div>
-                <!-- <div class="but">
-                    <a class="Enroll-now" href="">Enroll-now</a>
-
-                </div> -->
-                <div class="price">
-                    $10.99
-                </div>
-                <div class="but">
-                    <a class="purple" href="">Learn More</a>
-
-                </div>
             </div>
 
-            <div class="course">
-                <img src="images/dm.jpg " alt="">
-                <div class="details">
-                    <span>22/03/2022</span>
-                    <h6>Course for beginners</h6>
-                    <div class="review">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <span>(4)</span>
-
+            <div class="box hide">
+                <div class="image">
+                    <img src="images/course-2-7.jpg" alt="">
+                    <h3>teaching</h3>
+                </div>
+                <div class="content">
+                    <h3>choose what's best for you!</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque, odit!</p>
+                    <a href="#" class="btn">read more</a>
+                    <div class="icons">
+                        <span> <i class="fas fa-book"></i> 12 modules </span>
+                        <span> <i class="fas fa-clock"></i> 4.7 hours </span>
                     </div>
                 </div>
-                <div class="price">
-                    $10.99
-                </div>
-                <div class="but">
-                    <a class="purple" href="">Learn More</a>
-
-                </div>
-
-
             </div>
-            <div class="course">
-                <img src="images/java.png" alt="">
-                <div class="details">
-                    <span>22/03/2022</span>
-                    <h6>Course for beginners</h6>
-                    <div class="review">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <span>(4)</span>
 
+            <div class="box hide">
+                <div class="image">
+                    <img src="images/course-2-8.jpg" alt="">
+                    <h3>designing</h3>
+                </div>
+                <div class="content">
+                    <h3>choose what's best for you!</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque, odit!</p>
+                    <a href="#" class="btn">read more</a>
+                    <div class="icons">
+                        <span> <i class="fas fa-book"></i> 12 modules </span>
+                        <span> <i class="fas fa-clock"></i> 8 hours </span>
                     </div>
                 </div>
-                <div class="price">
-                    $10.99
-                </div>
-                <div class="but">
-                    <a class="purple" href="">Learn More</a>
-
-                </div>
-
-
             </div>
 
-            <div class="course">
-                <img src="images/wordpress.jpg" alt="">
-                <div class="details">
-                    <span>22/03/2022</span>
-                    <h6>Course for beginners</h6>
-                    <div class="review">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <span>(4)</span>
-
+            <div class="box hide">
+                <div class="image">
+                    <img src="images/course-2-9.jpg" alt="">
+                    <h3>Application Development</h3>
+                </div>
+                <div class="content">
+                    <h3>choose what's best for you!</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque, odit!</p>
+                    <a href="#" class="btn">read more</a>
+                    <div class="icons">
+                        <span> <i class="fas fa-book"></i> 20 modules </span>
+                        <span> <i class="fas fa-clock"></i> 14 hours </span>
                     </div>
                 </div>
-                <div class="price">
-                    $10.99
-                </div>
-                <div class="but">
-                    <a class="purple" href="">Learn More</a>
-
-                </div>
-
-
-            </div>
-            <div class="course">
-                <img src="images/flutter.jpg" alt="">
-                <div class="details">
-                    <span>22/03/2022</span>
-                    <h6>Course for beginners</h6>
-                    <div class="review">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <span>(4)</span>
-
-                    </div>
-                </div>
-                <!-- <div class="but">
-                    <a class="Enroll-now" href="">Enroll-now</a>
-
-                </div> -->
-                <div class="price">
-                    $10.99
-                </div>
-                <div class="but">
-                    <a class="purple" href="">Learn More</a>
-
-                </div>
-            </div>
-
-            <div class="course">
-                <img src="images/dm.jpg " alt="">
-                <div class="details">
-                    <span>22/03/2022</span>
-                    <h6>Course for beginners</h6>
-                    <div class="review">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <span>(4)</span>
-
-                    </div>
-                </div>
-                <div class="price">
-                    $10.99
-                </div>
-                <div class="but">
-                    <a class="purple" href="">Learn More</a>
-
-                </div>
-
-
-            </div>
-
-            <div class="course">
-                <img src="images/wordpress.jpg" alt="">
-                <div class="details">
-                    <span>22/03/2022</span>
-                    <h6>Course for beginners</h6>
-                    <div class="review">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <span>(4)</span>
-
-                    </div>
-                </div>
-                <div class="price">
-                    $10.99
-                </div>
-                <div class="but">
-                    <a class="purple" href="">Learn More</a>
-
-                </div>
-
-
-            </div>
-
-
-
-
-        </div>
-    </section>
-    <br>
-    <br>
-    <br>
-
-    <!-- Registration -->
-
-    <section id="reg">
-        <div class="reminder">
-            <p>Get online Courses for free!! </p>
-            <h1>Register To get It</h1>
-            <div class="time">
-                <div class="date">
-                    18 <br> Days
-                </div>
-                <div class="date">
-                    18 <br> Hours
-                </div>
-                <div class="date">
-                    18 <br> Minutes
-                </div>
-                <div class="date">
-                    18 <br> Seconds
-                </div>
-
             </div>
 
         </div>
-        <div class="form">
-            <h3>Create free account now</h3>
-            <input type="text" placeholder="Name" name="" id="">
-            <input type="text" placeholder="Email Address" name="" id="">
-            <input type="text" placeholder="Phone Number" name="" id="">
-            <input type="text" placeholder="" name="" id="">
-            <div class="but">
-                <a class="purple" href="">Submit Form</a>
-            </div>
+
+        <div class="load-more">
+            <div class="btn">load more</div>
         </div>
 
     </section>
 
-    <!-- experts -->
-    <section id="experts">
-        <h1>-Community Experts</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, a! Esse ullam, </p>
-        <div class="expert-box">
-            <div class="profile">
-                <img src="images/sir majid-modified.png" alt="">
-                <h6>Sir Majid Bashir</h6>
-                <p>Web Developer</p>
-                <div class="links">
-                    <i class="fab fa-facebook"></i>
-                    <i class="fab fa-instagram"></i>
-                    <i class="fab fa-linkedin"></i>
-                </div>
 
+
+
+
+
+
+
+
+
+
+    <!-- footer section starts  -->
+
+    <section class="footer">
+
+        <div class="box-container">
+
+            <div class="box">
+                <h3> <i class="fas fa-graduation-cap"></i> V-L-E </h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi, voluptatem.</p>
+                <div class="share">
+                    <a href="#" class="fab fa-facebook-f"></a>
+                    <a href="#" class="fab fa-twitter"></a>
+                    <a href="#" class="fab fa-instagram"></a>
+                    <a href="#" class="fab fa-linkedin"></a>
+                </div>
             </div>
-            <div class="profile">
-                <img src="images/sir majid-modified.png" alt="">
-                <h6>Sir Majid Bashir</h6>
-                <p>Web Developer</p>
-                <div class="links">
-                    <i class="fab fa-facebook"></i>
-                    <i class="fab fa-instagram"></i>
-                    <i class="fab fa-linkedin"></i>
-                </div>
 
+            <div class="box">
+                <h3>quick links</h3>
+                <a href="home.html" class="link">home</a>
+                <a href="about.html" class="link">about</a>
+                <a href="courses.html" class="link">courses</a>
+                <a href="contact.html" class="link">contact</a>
             </div>
-            <div class="profile">
-                <img src="images/sir majid-modified.png" alt="">
-                <h6>Sir Majid Bashir</h6>
-                <p>Web Developer</p>
-                <div class="links">
-                    <i class="fab fa-facebook"></i>
-                    <i class="fab fa-instagram" id="fb"></i>
-                    <i class="fab fa-linkedin"></i>
-                </div>
 
+            <div class="box">
+                <h3>useful links</h3>
+                <a href="#" class="link">help center</a>
+                <a href="#" class="link">ask questions</a>
+                <a href="#" class="link">send feedback</a>
+                <a href="#" class="link">private policy</a>
+                <a href="#" class="link">terms of use</a>
+            </div>
+
+            <div class="box">
+                <h3>newsletter</h3>
+                <p>subscribe for latest upadates</p>
+                <form action="">
+                    <input type="email" name="" placeholder="enter your email" id="" class="email">
+                    <input type="submit" value="subscribe" class="btn">
+                </form>
             </div>
 
         </div>
+
+        <div class="credit"> created by <span>mr. web designer</span> | all rights reserved! </div>
+
     </section>
-    <!-- footer -->
-    <footer>
-        <div class="col1">
-            <h3>Power Tools</h3>
-            <li>Jobs</li>
-            <li>Jobs</li>
-            <li>Jobs</li>
-            <li>Jobs</li>
-            <li>Jobs</li>
+
+    <!-- footer section ends -->
 
 
-        </div>
-        <div class="col1">
-            <h3>Power Tools</h3>
-            <li>Jobs</li>
-            <li>Jobs</li>
-            <li>Jobs</li>
-            <li>Jobs</li>
-            <li>Jobs</li>
 
 
-        </div>
-        <div class="col1">
-            <h3>Power Tools</h3>
-            <li>Jobs</li>
-            <li>Jobs</li>
-            <li>Jobs</li>
-            <li>Jobs</li>
-            <li>Jobs</li>
-        </div>
 
 
-        <div class="news">
-            <h3>Newsletters</h3>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. </p>
-            <div class="sub">
-                <input type="text" placeholder="Your Email Address">
-                <a href="" class="yellow">Subscribe</a>
-            </div>
-        </div>
-        <div class="copy">
-            <p>Copyright 2022 All rights reserved | 473/Shaheer & 475/Hassaan</p>
-            <div class="icons">
-                <i class="fab fa-facebook"></i>
-                <i class="fab fa-instagram"></i>
-                <i class="fab fa-linkedin"></i>
+    <!-- swiper js link  -->
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
 
-            </div>
-        </div>
-    </footer>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="app.js"></script>
+    <!-- custom js file link  -->
+    <script src="js/script.js"></script>
+
 </body>
 
 </html>
